@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="myBot">
+<head>
+    <title>My Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <script src="scripts/angular.js"></script>
+    <!--<script src="scripts/angular-route.js"></script>-->
+    <script src="scripts/angular-sanitize.js"></script>
+    <script src="scripts/MyScript.js"></script>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body ng-controller="myBotController">
+    <ol class="chat">
+        <li ng-repeat="comment in comments" class="{{comment.commentClass}}-user">
+            <div class="avatar"><img ng-src="images/{{comment.image}}.png" draggable="false" /></div>
+            <div class="msg">
+                <h2 ng-show="comment.isWelcome">{{comment.welcomeMessage}}</h2>
+                <p ng-bind-html="comment.text">
+                   
+                </p>
+                <time>{{comment.time}}</time>
+            </div>
+        </li>
+    </ol>
+    <div id="bottom">&nbsp;</div>
+    <input class="textarea" type="text" placeholder="Type here!" ng-model="message" ng-keypress="checkkey($event,message)" />
+</body>
+</html>
