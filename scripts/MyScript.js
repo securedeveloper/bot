@@ -50,7 +50,7 @@ myBot.controller("myBotController", function ($scope, $location, $anchorScroll, 
             counter: 0
         };
         comments.push(comment);
-        $http({ method: "GET", url: "http://my-bot.epizy.com/bot.php", params: { text: txt}}).then(function (response) {
+        $http({ method: "GET", url: "https://my-bot.000webhostapp.com/bot.php", params: { text: txt}}).then(function (response) {
             comment.fullText = response.data.response+"";
             typeWriter(comment);
             scrollTo('bottom');
