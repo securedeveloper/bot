@@ -31,7 +31,7 @@ Following technologies have been use to accomplish this task.
  **Bot Help Menu**
  ![Bot Help Menu](https://raw.githubusercontent.com/securedeveloper/bot/master/images/0001.png)
  
- **Interactuib with Bot via Commands**
+ **Interaction with Bot via Commands**
  ![Interaction with Bot](https://raw.githubusercontent.com/securedeveloper/bot/master/images/0003.png)
  
  **Random Commands to Bot**
